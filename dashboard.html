@@ -3,6 +3,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/styles.css" />
     <link rel="stylesheet" href="./public/css/dashboard.css" />
     <title>Dashboard</title>
@@ -11,21 +14,21 @@
     <main id="dashboard">
       <section id="dashboard__sidebar">
         <div id="logo__wrapper">
-          <img src="assets/img/logo.png" alt="decagon logo" />
+          <img src="./assets/img/logo.png" alt="decagon logo" />
         </div>
         <div class="navlink__wrapper">
           <div class="nav__icons">
-            <img src="assets/img/overview.svg" alt="overview icon" />
+            <img src="./assets/img/overview.svg" alt="overview icon" />
             <p>Overview</p>
           </div>
           <div class="nav__icons">
-            <img src="assets/img/students.svg" alt="overview icon" />
+            <img src="./assets/img/students.svg" alt="overview icon" />
             <p>Students</p>
           </div>
         </div>
         <div id="logout__wrapper">
           <div>
-            <img src="assets/img/logout.svg" alt="logout logo" />
+            <img src="./assets/img/logout.svg" alt="logout logo" />
           </div>
           <p>Logout</p>
         </div>
@@ -33,14 +36,17 @@
       <section id="dashboard__content">
         <nav class="responsive__nav">
           <div class="links">
-            <img class="avatar" src="assets/img/logo.png" alt="decagon logo" />
+            <img class="avatar" src="./assets/img/logo.png" alt="decagon logo" />
             <h3>Good Morning, Emeka</h3>
             <img class="avatar" src="./assets/img/avatar.png" alt="avatar" />
           </div>
-          <div class="links">
+          <div class="links" id="navbar___links">
             <p>Overview</p>
             <p>Students</p>
             <p>Logout</p>
+          </div>
+          <div id="bar__wrapper">
+            <img src="./assets/img/bar.jpeg" />
           </div>
         </nav>
         <nav id="main__nav">
@@ -51,7 +57,7 @@
           <div id="stack__wrapper">
             <div class="stack__card">
               <div>
-                <img src="assets/img/java2.svg" alt="java logo" />
+                <img src="./assets/img/java2.svg" alt="java logo" />
               </div>
               <div>
                 <p class="stack__text">Java</p>
@@ -65,7 +71,7 @@
             </div>
             <div class="stack__card">
               <div>
-                <img src="assets/img/csharp2.svg" alt="csharp logo" />
+                <img src="./assets/img/csharp2.svg" alt="csharp logo" />
               </div>
               <div>
                 <p class="stack__text">C#</p>
@@ -79,7 +85,7 @@
             </div>
             <div class="stack__card">
               <div>
-                <img src="assets/img/android2.svg" alt="Android logo" />
+                <img src="./assets/img/android2.svg" alt="Android logo" />
               </div>
               <div>
                 <p class="stack__text">Android</p>
@@ -93,7 +99,7 @@
             </div>
             <div class="stack__card">
               <div>
-                <img src="assets/img/node2.svg" alt="node logo" />
+                <img src="./assets/img/node2.svg" alt="node logo" />
               </div>
               <div>
                 <p class="stack__text">Node</p>
@@ -109,7 +115,7 @@
               <div>
                 <img
                   id="python__image"
-                  src="assets/img/python2.svg"
+                  src="./assets/img/python3.png"
                   alt="python logo"
                 />
               </div>
@@ -131,7 +137,7 @@
                 <div id="squad__btn">
                   <img src="assets/img/back.svg" />
                   <small>Squad 1</small>
-                  <img src="assets/img/next.svg" />
+                  <img src="./assets/img/next.svg" />
                 </div>
                 <div>
                   <div class="progress__wrapper">

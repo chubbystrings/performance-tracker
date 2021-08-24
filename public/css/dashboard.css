@@ -21,7 +21,7 @@
 .nav__icons {
   text-align: center;
   width: fit-content;
-  padding: 1px
+  padding: 3px
 }
 
 .nav__icons img {
@@ -253,6 +253,16 @@
   justify-content: space-between;
 }
 
+#bar__wrapper {
+  display: none;
+}
+
+#bar__wrapper img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
 #main__nav {
   visibility: visible;
 }
@@ -277,6 +287,14 @@
   #dashboard__content {
     width: 100%;
   }
+
+}
+
+@media screen and (max-width: 1060px) {
+ #stack__wrapper {
+   height: 640px;
+   overflow-y: scroll;
+ }
 
 }
 
@@ -305,11 +323,12 @@
 }
 
 @media screen and (max-width: 495px) {
-  .links {
-    gap: 5px;
+  #navbar___links{
+    display: none
   }
 
-  .links p {
-    font-size: 10px;
+  #bar__wrapper {
+    display: inline
   }
+
 }
