@@ -1,0 +1,334 @@
+#dashboard {
+  display: flex;
+}
+#dashboard__sidebar {
+  position: relative;
+  width: 10%;
+  background-color: #ffffff;
+  height: 100vh;
+}
+.navlink__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50px;
+  height: 90px;
+  left: 42px;
+  top: 220.87px;
+  gap: 80px;
+}
+
+.nav__icons {
+  text-align: center;
+  width: fit-content;
+  padding: 3px
+}
+
+.nav__icons img {
+  width: 25px
+}
+
+#logo__wrapper {
+  position: absolute;
+  width: 57px;
+  height: 59px;
+  left: 42px;
+  top: 46px;
+  text-align: center;
+}
+
+#logo__wrapper img {
+  width: 40px
+}
+
+#dashboard__content {
+  position: relative;
+  width: 90%;
+  background-color: #f4f6f8;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#dashboard__content nav {
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#dashboard__content__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+#stack__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stack__card {
+  padding-top: 30px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 302px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.stack__card div {
+  width: 100%;
+  text-align: center;
+  height: 65px;
+}
+
+.stack__text {
+  margin-top: 30px;
+}
+
+#python__image {
+  width: 60px;
+  height: 60px;
+}
+
+.number__of__students {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 10px;
+  /* identical to box height */
+  color: #63a568;
+  margin: 5px;
+}
+
+#performance__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.performance__card {
+  width: 360px;
+  height: 619px;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 50px 15px 15px 15px;
+}
+#performance__card__wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+.performance__card h3 {
+  text-align: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  width: 250px;
+  margin: 50px auto;
+
+  color: #242424;
+}
+
+.avatar {
+  height: 40px;
+  width: 44px;
+  margin: 20px;
+}
+
+#overview__wrapper {
+  position: absolute;
+  width: 50px;
+  height: 90px;
+  left: 42px;
+  top: 279.87px;
+}
+
+#student__wrapper {
+  position: absolute;
+  left: 42px;
+  top: 60.55%;
+  bottom: 25.78%;
+}
+
+#logout__wrapper {
+  position: absolute;
+  left: 42px;
+  bottom: 30px;
+  width: 50px;
+  text-align: center;
+}
+
+#logout__wrapper img {
+  width: 25px;
+}
+
+#overview__text {
+  width: 72px;
+  border: 1px solid black;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  /* line-height: 25px; */
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #242424;
+}
+#squad__btn {
+  display: flex;
+  justify-content: space-around;
+}
+#squad__btn img {
+  width: 20px;
+  height: 20px;
+}
+#squad__btn small {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+
+  color: rgba(52, 56, 83, 0.54);
+}
+
+
+#progressGreen {
+    background-color: #EEEAEA;
+    border-radius: 13px;
+    width: 80px;
+    height: 8px;
+}
+    
+#progressGreen > div {
+    background-color: #509849;
+    width: 75%;
+    height: 8px;
+    border-radius: 10px;
+}
+
+#progressRed {
+  background-color: #EEEAEA;
+  border-radius: 13px;
+  width: 80px;
+  height: 8px;
+}
+  
+#progressRed > div {
+  background-color: red;
+  width: 43%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.progress__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.responsive__nav {
+  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bar__wrapper {
+  display: none;
+}
+
+#bar__wrapper img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+#main__nav {
+  visibility: visible;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  #main__nav {
+    visibility: hidden;
+  }
+  .responsive__nav {
+    visibility: visible;
+  }
+  #dashboard__sidebar {
+    display: none;
+  }
+  #dashboard__content {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1060px) {
+ #stack__wrapper {
+   height: 640px;
+   overflow-y: scroll;
+ }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  #performance__wrapper {
+    margin: 0 auto;
+  }
+ 
+  .performance__card {
+    width: 290px;
+    height: 550px;
+    padding: 5px
+  }
+  .performance__card h3 {
+    font-size: 15px;
+  }
+
+  #stack__wrapper {
+    height: fit-content
+    
+  }
+  #dashboard__content__wrapper {
+    grid-template-columns: 3fr;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  #navbar___links{
+    display: none
+  }
+
+  #bar__wrapper {
+    display: inline
+  }
+
+}
